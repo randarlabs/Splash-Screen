@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My App</string>
+    <string name="main_screen">MainScreen</string>
+    <string name="splash_screen">My App ©2010 Randar Labs, LLC</string>
+</resources>
