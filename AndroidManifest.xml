@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.randarlabs.android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    package="drinks.com.randarlabs.android"
     android:versionCode="1"
     android:versionName="1.0" >
-
-    <uses-sdk android:minSdkVersion="8" />
-
-    <application
+	<application
         android:icon="@drawable/icon"
         android:label="@string/app_name" >
         <activity
             android:label="@string/app_name"
-            android:name=".SplashScreenActivity" >
+            android:name="com.randarlabs.android.splashscreen.SplashScreenActivity" >
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -21,10 +19,18 @@
             android:name="MyApp" 
             android:label="@string/main_screen">
             <intent-filter >
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action 
+                    android:name="android.intent.action.MAIN" />
+                <category 
+                    android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.google.ads.AdActivity" 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
     </application>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="13"/> 
 
-</manifest>
+</manifest> 

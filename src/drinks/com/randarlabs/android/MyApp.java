@@ -1,4 +1,4 @@
-package com.randarlabs.android;
+package drinks.com.randarlabs.android;
 
 import android.app.Activity;
 import android.os.Bundle;

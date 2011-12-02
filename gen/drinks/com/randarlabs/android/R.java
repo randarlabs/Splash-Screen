@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.randarlabs.android;
+package drinks.com.randarlabs.android;
 
 public final class R {
     public static final class attr {
@@ -16,13 +16,15 @@ public final class R {
         public static final int logo_96=0x7f020002;
     }
     public static final class id {
-        public static final int imageView1=0x7f060000;
+        public static final int adView=0x7f060000;
+        public static final int imageView1=0x7f060001;
     }
     public static final class layout {
         public static final int main=0x7f030000;
         public static final int splash=0x7f030001;
     }
     public static final class string {
+        public static final int admob_ID=0x7f040003;
         public static final int app_name=0x7f040000;
         public static final int main_screen=0x7f040001;
         public static final int splash_screen=0x7f040002;

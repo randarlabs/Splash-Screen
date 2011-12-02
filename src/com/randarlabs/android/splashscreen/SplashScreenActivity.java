@@ -1,4 +1,4 @@
-package com.randarlabs.android;
+package com.randarlabs.android.splashscreen;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -21,12 +21,12 @@ public class SplashScreenActivity extends Activity {
 	        if (data.showSplashScreen) {
 	            showSplashScreen();
 	        }
-	        setContentView(R.layout.main);        
+	        setContentView(drinks.com.randarlabs.android.R.layout.main);        
 	 
 	        // Rebuild your UI with your saved state here
 	    } else {
 	        showSplashScreen();
-	        setContentView(R.layout.main);
+	        setContentView(drinks.com.randarlabs.android.R.layout.main);
 	        // Do your heavy loading here on a background thread
 	    }
 	}
@@ -57,8 +57,8 @@ public class SplashScreenActivity extends Activity {
 	 * Shows the splash screen over the full Activity
 	 */
 	protected void showSplashScreen() {
-	    mSplashDialog = new Dialog(this, R.style.SplashScreen);
-	    mSplashDialog.setContentView(R.layout.splash);
+	    mSplashDialog = new Dialog(this, drinks.com.randarlabs.android.R.style.SplashScreen);
+	    mSplashDialog.setContentView(drinks.com.randarlabs.android.R.layout.splash);
 	    mSplashDialog.setCancelable(false);
 	    mSplashDialog.show();
 	 
